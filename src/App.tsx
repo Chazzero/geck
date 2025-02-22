@@ -2,12 +2,17 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import PlantList from './components/PlantList'; 
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+    <div className="App">
+      <h1>Bienvenido a mi proyecto de plantas</h1>
+      <PlantList />  {/* Usamos el componente aquí */}
+    </div>
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -31,5 +36,5 @@ function App() {
     </>
   )
 }
-
+//https://perenual.com/docs/api
 export default App
